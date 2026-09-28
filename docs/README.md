@@ -36,6 +36,7 @@ Once this is more fully tested and stable it will be available via ComyUI extens
 I may in the future integrate workflows with more node pack dependencies, for now this is the main one:
 
 [Krea-2 + MiniMax H3 ref2vid](workflows/callsheet_k2_mmh3.json) (depends on KJNodes)
+[Krea-2 + MiniMax H3 ref2vid + Qwen Image 2.1](workflows/callsheet_k2_mmh3.json) (depends on KJNodes)
 
 # Support
 
