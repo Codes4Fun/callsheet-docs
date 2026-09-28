@@ -1,0 +1,1905 @@
+{
+  "id": "5674f01d-8383-461d-9031-ac47ec9bdbb9",
+  "revision": 0,
+  "last_node_id": 219,
+  "last_link_id": 516,
+  "nodes": [
+    {
+      "id": 54,
+      "type": "CallsheetCollector",
+      "pos": [
+        770,
+        -290
+      ],
+      "size": [
+        540,
+        560
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "showAdvanced": false,
+      "inputs": [
+        {
+          "name": "parsed",
+          "type": "CS_PARSED",
+          "link": 503
+        },
+        {
+          "name": "items_1",
+          "type": "CS_ITEMS",
+          "link": 516
+        },
+        {
+          "name": "items_2",
+          "type": "CS_ITEMS",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "labels",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CallsheetCollector"
+      },
+      "widgets_values": [
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "pipeline_filter": "",
+        "asset_browser": ""
+      }
+    },
+    {
+      "id": 214,
+      "type": "CallsheetTextInputB",
+      "pos": [
+        -880,
+        -290
+      ],
+      "size": [
+        410,
+        620
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "parsed",
+          "type": "CS_PARSED",
+          "links": [
+            503,
+            513
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CallsheetTextInputB"
+      },
+      "widgets_values": [
+        "pipeline: character\nsize: 1mp 1:1\n===\nlabel: ninja\n---\nFull body character turnaround (front, side, back) in anime style of a male ninja on plain white background. The ninja has no mask, with sharp focused eyes and determined expression. He wears form-fitting black tactical attire with sleek metallic armor plates forearms, and shins. The armor features subtle engraved patterns and clean metallic finishes. His short dark hair is slightly tousled with some strands falling across his forehead. He has several kunai knives strapped to his thighs. The illustration uses clean anime line art with consistent proportions across all angles.\n===\nlabel: ronin\n---\nFull body character turnaround (front, side, back) in anime style of a male ronin samurai on plain white background. The ronin has a weathered face with intense eyes and a well-groomed beard. His dark hair is partially tied in a loose topknot with some strands falling freely. He wears traditional dark blue samurai clothing without armor - a simple kimono top with wide sleeves, hakama pants, and a simple sash. A single katana is tucked into his sash, worn from frequent use. His clothing appears slightly worn but well-maintained, befitting a masterless warrior. The illustration uses clean anime line art with consistent proportions across all angles.\n===\npipeline: background\nsize: 1mp 3:1\n===\nlabel: grocery_store\n---\nCross-section view in anime background style of a grocery store. In the back is a soda isle. At the center is a table. On the right are some neatly stacked boxes.\n",
+        false,
+        true,
+        16,
+        0,
+        0,
+        1024,
+        1024,
+        24,
+        "{\n  \"krea2\": {\n    \"tasks\": { \"character\":\"image\", \"background\":\"image\", \"prop\":\"image\" },\n    \"allowed_flags\": [],\n    \"uniform_flags\": [],\n    \"max_jobs_per_pass\": 4,\n    \"size\": {\"step\":8}\n  }\n}",
+        ""
+      ],
+      "widgets_values_named": {
+        "text": "pipeline: character\nsize: 1mp 1:1\n===\nlabel: ninja\n---\nFull body character turnaround (front, side, back) in anime style of a male ninja on plain white background. The ninja has no mask, with sharp focused eyes and determined expression. He wears form-fitting black tactical attire with sleek metallic armor plates forearms, and shins. The armor features subtle engraved patterns and clean metallic finishes. His short dark hair is slightly tousled with some strands falling across his forehead. He has several kunai knives strapped to his thighs. The illustration uses clean anime line art with consistent proportions across all angles.\n===\nlabel: ronin\n---\nFull body character turnaround (front, side, back) in anime style of a male ronin samurai on plain white background. The ronin has a weathered face with intense eyes and a well-groomed beard. His dark hair is partially tied in a loose topknot with some strands falling freely. He wears traditional dark blue samurai clothing without armor - a simple kimono top with wide sleeves, hakama pants, and a simple sash. A single katana is tucked into his sash, worn from frequent use. His clothing appears slightly worn but well-maintained, befitting a masterless warrior. The illustration uses clean anime line art with consistent proportions across all angles.\n===\npipeline: background\nsize: 1mp 3:1\n===\nlabel: grocery_store\n---\nCross-section view in anime background style of a grocery store. In the back is a soda isle. At the center is a table. On the right are some neatly stacked boxes.\n",
+        "strict": false,
+        "auto_continue": true,
+        "max_passes": 16,
+        "max_jobs_per_pass": 0,
+        "base_seed": 0,
+        "fallback_width": 1024,
+        "fallback_height": 1024,
+        "fallback_fps": 24,
+        "pipeline_specs": "{\n  \"krea2\": {\n    \"tasks\": { \"character\":\"image\", \"background\":\"image\", \"prop\":\"image\" },\n    \"allowed_flags\": [],\n    \"uniform_flags\": [],\n    \"max_jobs_per_pass\": 4,\n    \"size\": {\"step\":8}\n  }\n}",
+        "state": ""
+      }
+    },
+    {
+      "id": 217,
+      "type": "48a3f091-fb35-4578-81f7-f994ac7fa6e8",
+      "pos": [
+        -30,
+        -170
+      ],
+      "size": [
+        390,
+        380
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": 509
+        },
+        {
+          "label": "prompt_enhance",
+          "name": "value_1",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "value_1"
+          },
+          "link": null
+        },
+        {
+          "label": "LLM_thinking_mode",
+          "name": "thinking",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "thinking"
+          },
+          "link": null
+        },
+        {
+          "label": "LLM_max_token",
+          "name": "max_length_1",
+          "type": "INT",
+          "widget": {
+            "name": "max_length_1"
+          },
+          "link": null
+        },
+        {
+          "label": "width",
+          "name": "width_1",
+          "type": "INT",
+          "widget": {
+            "name": "width_1"
+          },
+          "link": 510
+        },
+        {
+          "label": "height",
+          "name": "height_1",
+          "type": "INT",
+          "widget": {
+            "name": "height_1"
+          },
+          "link": 511
+        },
+        {
+          "label": "seed",
+          "name": "seed_1",
+          "type": "INT",
+          "widget": {
+            "name": "seed_1"
+          },
+          "link": 512
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            515
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.25.0",
+        "previewExposures": [
+          {
+            "name": "$$canvas-image-preview",
+            "sourceNodeId": "3",
+            "sourcePreviewName": "$$canvas-image-preview"
+          }
+        ]
+      },
+      "widgets_values": [
+        "A high-resolution, surreal digital illustration showing a human hand holding a martini glass. The image is overlaid with whimsical, expressive ink-style doodles, including a cartoon figure inside the glass, a drawn citrus wedge on the rim, and various abstract sketches and faces surrounding the glass against a clean, white background. The style seamlessly blends a realistic, lit photograph with loose, hand-drawn marker artistry, creating a playful and artistic juxtaposition.<lora:krea2_darkbrush.safetensors:0.8>",
+        false,
+        false,
+        512,
+        1024,
+        1024,
+        0,
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "value": "A high-resolution, surreal digital illustration showing a human hand holding a martini glass. The image is overlaid with whimsical, expressive ink-style doodles, including a cartoon figure inside the glass, a drawn citrus wedge on the rim, and various abstract sketches and faces surrounding the glass against a clean, white background. The style seamlessly blends a realistic, lit photograph with loose, hand-drawn marker artistry, creating a playful and artistic juxtaposition.<lora:krea2_darkbrush.safetensors:0.8>",
+        "value_1": false,
+        "thinking": false,
+        "max_length_1": 512,
+        "width_1": 1024,
+        "height_1": 1024,
+        "seed_1": 0,
+        "unet_name": "krea2_turbo_fp8_scaled.safetensors",
+        "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 218,
+      "type": "CallsheetPipelineBasic",
+      "pos": [
+        -380,
+        -230
+      ],
+      "size": [
+        270,
+        280
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "parsed",
+          "type": "CS_PARSED",
+          "link": 513
+        },
+        {
+          "name": "after_1",
+          "shape": 7,
+          "type": "CS_ITEMS",
+          "link": null
+        },
+        {
+          "name": "after_2",
+          "shape": 7,
+          "type": "CS_ITEMS",
+          "link": null
+        },
+        {
+          "name": "after_3",
+          "shape": 7,
+          "type": "CS_ITEMS",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "job",
+          "shape": 6,
+          "type": "CS_JOB",
+          "links": [
+            514
+          ]
+        },
+        {
+          "name": "fps",
+          "shape": 6,
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "prompt",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            509
+          ]
+        },
+        {
+          "name": "negative",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "width",
+          "shape": 6,
+          "type": "INT",
+          "links": [
+            510
+          ]
+        },
+        {
+          "name": "height",
+          "shape": 6,
+          "type": "INT",
+          "links": [
+            511
+          ]
+        },
+        {
+          "name": "length",
+          "shape": 6,
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "seed",
+          "shape": 6,
+          "type": "INT",
+          "links": [
+            512
+          ]
+        },
+        {
+          "name": "flags",
+          "shape": 6,
+          "type": "CS_FLAGS",
+          "links": null
+        },
+        {
+          "name": "refs",
+          "shape": 6,
+          "type": "CS_REFS",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CallsheetPipelineBasic"
+      },
+      "widgets_values": [
+        "krea2"
+      ],
+      "widgets_values_named": {
+        "pipeline": "krea2"
+      }
+    },
+    {
+      "id": 219,
+      "type": "CallsheetStoreImages",
+      "pos": [
+        450,
+        -230
+      ],
+      "size": [
+        230,
+        80
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "job",
+          "type": "CS_JOB",
+          "link": 514
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 515
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CS_ITEMS",
+          "shape": 6,
+          "type": "CS_ITEMS",
+          "links": [
+            516
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CallsheetStoreImages"
+      }
+    }
+  ],
+  "links": [
+    [
+      503,
+      214,
+      0,
+      54,
+      0,
+      "CS_PARSED"
+    ],
+    [
+      509,
+      218,
+      2,
+      217,
+      0,
+      "STRING"
+    ],
+    [
+      510,
+      218,
+      4,
+      217,
+      4,
+      "INT"
+    ],
+    [
+      511,
+      218,
+      5,
+      217,
+      5,
+      "INT"
+    ],
+    [
+      512,
+      218,
+      7,
+      217,
+      6,
+      "INT"
+    ],
+    [
+      513,
+      214,
+      0,
+      218,
+      0,
+      "CS_PARSED"
+    ],
+    [
+      514,
+      218,
+      0,
+      219,
+      0,
+      "CS_JOB"
+    ],
+    [
+      515,
+      217,
+      0,
+      219,
+      1,
+      "IMAGE"
+    ],
+    [
+      516,
+      219,
+      0,
+      54,
+      1,
+      "CS_ITEMS"
+    ]
+  ],
+  "groups": [],
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "48a3f091-fb35-4578-81f7-f994ac7fa6e8",
+        "version": 1,
+        "state": {
+          "lastGroupId": 10,
+          "lastNodeId": 219,
+          "lastLinkId": 516,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Text to Image (Krea-2 Turbo)",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -1663.0467311105908,
+            442.6713226822096,
+            160.76953125,
+            248
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            1560,
+            496,
+            128,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "b0f5c754-5322-440c-8c1c-ba732e910d33",
+            "name": "value",
+            "type": "STRING",
+            "linkIds": [
+              45
+            ],
+            "pos": [
+              -1526.2771998605908,
+              466.6713226822096
+            ]
+          },
+          {
+            "id": "47b0e74d-ef80-4423-a7a6-9bd1673092bb",
+            "name": "value_1",
+            "type": "BOOLEAN",
+            "linkIds": [
+              46
+            ],
+            "label": "prompt_enhance",
+            "pos": [
+              -1526.2771998605908,
+              486.6713226822096
+            ]
+          },
+          {
+            "id": "bece097f-5c57-4aeb-9113-16499634a69c",
+            "name": "thinking",
+            "type": "BOOLEAN",
+            "linkIds": [
+              73
+            ],
+            "label": "LLM_thinking_mode",
+            "pos": [
+              -1526.2771998605908,
+              506.6713226822096
+            ]
+          },
+          {
+            "id": "9b4edd63-9421-47d9-8c41-5a44510fcba9",
+            "name": "max_length_1",
+            "type": "INT",
+            "linkIds": [
+              74
+            ],
+            "label": "LLM_max_token",
+            "pos": [
+              -1526.2771998605908,
+              526.6713226822096
+            ]
+          },
+          {
+            "id": "2a2c225e-95ca-4c45-ab19-5072a890b064",
+            "name": "width_1",
+            "type": "INT",
+            "linkIds": [
+              75
+            ],
+            "label": "width",
+            "pos": [
+              -1526.2771998605908,
+              546.6713226822096
+            ]
+          },
+          {
+            "id": "acdd37ed-8b29-4b6d-8d6a-51aacaaefc73",
+            "name": "height_1",
+            "type": "INT",
+            "linkIds": [
+              76
+            ],
+            "label": "height",
+            "pos": [
+              -1526.2771998605908,
+              566.6713226822096
+            ]
+          },
+          {
+            "id": "08bcb3eb-ae87-41cc-b695-d1f934f05e35",
+            "name": "seed_1",
+            "type": "INT",
+            "linkIds": [
+              77
+            ],
+            "label": "seed",
+            "pos": [
+              -1526.2771998605908,
+              586.6713226822096
+            ]
+          },
+          {
+            "id": "f4e9f716-afa5-48ca-a314-64f4659b0c99",
+            "name": "unet_name",
+            "type": "COMBO",
+            "linkIds": [
+              82
+            ],
+            "pos": [
+              -1526.2771998605908,
+              606.6713226822096
+            ]
+          },
+          {
+            "id": "add6cb96-21da-41c2-9ef9-60dfe1cb7535",
+            "name": "clip_name",
+            "type": "COMBO",
+            "linkIds": [
+              83
+            ],
+            "pos": [
+              -1526.2771998605908,
+              626.6713226822096
+            ]
+          },
+          {
+            "id": "81640110-5a4d-45c0-9d7c-59966875bf0f",
+            "name": "vae_name",
+            "type": "COMBO",
+            "linkIds": [
+              84
+            ],
+            "pos": [
+              -1526.2771998605908,
+              646.6713226822096
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "e4073813-752d-4584-96b5-6e42eac355dd",
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "linkIds": [
+              43
+            ],
+            "localized_name": "IMAGE",
+            "pos": [
+              1584,
+              520
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 6,
+            "type": "CLIPTextEncode",
+            "pos": [
+              100,
+              -250
+            ],
+            "size": [
+              480,
+              420
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 96
+              },
+              {
+                "localized_name": "text",
+                "name": "text",
+                "type": "STRING",
+                "widget": {
+                  "name": "text"
+                },
+                "link": 91
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CONDITIONING",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "slot_index": 0,
+                "links": [
+                  4,
+                  13
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "CLIPTextEncode",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              "A high-resolution, surreal digital illustration showing a human hand holding a martini glass. The image is overlaid with whimsical, expressive ink-style doodles, including a cartoon figure inside the glass, a drawn citrus wedge on the rim, and various abstract sketches and faces surrounding the glass against a clean, white background. The style seamlessly blends a realistic, lit photograph with loose, hand-drawn marker artistry, creating a playful and artistic juxtaposition."
+            ],
+            "widgets_values_named": {
+              "text": "A high-resolution, surreal digital illustration showing a human hand holding a martini glass. The image is overlaid with whimsical, expressive ink-style doodles, including a cartoon figure inside the glass, a drawn citrus wedge on the rim, and various abstract sketches and faces surrounding the glass against a clean, white background. The style seamlessly blends a realistic, lit photograph with loose, hand-drawn marker artistry, creating a playful and artistic juxtaposition."
+            },
+            "color": "#232",
+            "bgcolor": "#353"
+          },
+          {
+            "id": 5,
+            "type": "EmptyLatentImage",
+            "pos": [
+              170,
+              350
+            ],
+            "size": [
+              320,
+              170
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "widget": {
+                  "name": "width"
+                },
+                "link": 75
+              },
+              {
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "widget": {
+                  "name": "height"
+                },
+                "link": 76
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "LATENT",
+                "name": "LATENT",
+                "type": "LATENT",
+                "slot_index": 0,
+                "links": [
+                  2
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "EmptyLatentImage",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              1024,
+              1024,
+              1
+            ],
+            "widgets_values_named": {
+              "width": 1024,
+              "height": 1024,
+              "batch_size": 1
+            }
+          },
+          {
+            "id": 3,
+            "type": "KSampler",
+            "pos": [
+              640,
+              -100
+            ],
+            "size": [
+              320,
+              590
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 95
+              },
+              {
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "link": 4
+              },
+              {
+                "localized_name": "negative",
+                "name": "negative",
+                "type": "CONDITIONING",
+                "link": 14
+              },
+              {
+                "localized_name": "latent_image",
+                "name": "latent_image",
+                "type": "LATENT",
+                "link": 2
+              },
+              {
+                "localized_name": "seed",
+                "name": "seed",
+                "type": "INT",
+                "widget": {
+                  "name": "seed"
+                },
+                "link": 77
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "LATENT",
+                "name": "LATENT",
+                "type": "LATENT",
+                "slot_index": 0,
+                "links": [
+                  7
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "KSampler",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              735915477938686,
+              "fixed",
+              8,
+              1,
+              "euler",
+              "simple",
+              1
+            ],
+            "widgets_values_named": {
+              "seed": 735915477938686,
+              "control_after_generate": "fixed",
+              "steps": 8,
+              "cfg": 1,
+              "sampler_name": "euler",
+              "scheduler": "simple",
+              "denoise": 1
+            }
+          },
+          {
+            "id": 8,
+            "type": "VAEDecode",
+            "pos": [
+              1010,
+              -270
+            ],
+            "size": [
+              230,
+              100
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "samples",
+                "name": "samples",
+                "type": "LATENT",
+                "link": 7
+              },
+              {
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 12
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "slot_index": 0,
+                "links": [
+                  43
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "VAEDecode",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            }
+          },
+          {
+            "id": 10,
+            "type": "UNETLoader",
+            "pos": [
+              -410,
+              -240
+            ],
+            "size": [
+              450,
+              140
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "unet_name",
+                "name": "unet_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "unet_name"
+                },
+                "link": 82
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MODEL",
+                "name": "MODEL",
+                "type": "MODEL",
+                "links": [
+                  92
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "UNETLoader",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "models": [
+                {
+                  "name": "krea2_turbo_fp8_scaled.safetensors",
+                  "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+                  "directory": "diffusion_models"
+                }
+              ]
+            },
+            "widgets_values": [
+              "krea2_turbo_fp8_scaled.safetensors",
+              "default"
+            ],
+            "widgets_values_named": {
+              "unet_name": "krea2_turbo_fp8_scaled.safetensors",
+              "weight_dtype": "default"
+            }
+          },
+          {
+            "id": 11,
+            "type": "CLIPLoader",
+            "pos": [
+              -410,
+              150
+            ],
+            "size": [
+              450,
+              170
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip_name",
+                "name": "clip_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "clip_name"
+                },
+                "link": 83
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "links": [
+                  18,
+                  93
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "CLIPLoader",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "models": [
+                {
+                  "name": "qwen3vl_4b_fp8_scaled.safetensors",
+                  "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+                  "directory": "text_encoders"
+                }
+              ]
+            },
+            "widgets_values": [
+              "qwen3vl_4b_fp8_scaled.safetensors",
+              "krea2",
+              "default"
+            ],
+            "widgets_values_named": {
+              "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+              "type": "krea2",
+              "device": "default"
+            }
+          },
+          {
+            "id": 12,
+            "type": "VAELoader",
+            "pos": [
+              -410,
+              390
+            ],
+            "size": [
+              450,
+              120
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "vae_name",
+                "name": "vae_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "vae_name"
+                },
+                "link": 84
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "VAE",
+                "name": "VAE",
+                "type": "VAE",
+                "links": [
+                  12
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "VAELoader",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "models": [
+                {
+                  "name": "qwen_image_vae.safetensors",
+                  "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors",
+                  "directory": "vae"
+                }
+              ]
+            },
+            "widgets_values": [
+              "qwen_image_vae.safetensors"
+            ],
+            "widgets_values_named": {
+              "vae_name": "qwen_image_vae.safetensors"
+            }
+          },
+          {
+            "id": 13,
+            "type": "ConditioningZeroOut",
+            "pos": [
+              350,
+              220
+            ],
+            "size": [
+              230,
+              30
+            ],
+            "flags": {
+              "collapsed": true
+            },
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "conditioning",
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": 13
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CONDITIONING",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [
+                  14
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "ConditioningZeroOut",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            }
+          },
+          {
+            "id": 16,
+            "type": "TextGenerate",
+            "pos": [
+              60,
+              650
+            ],
+            "size": [
+              400,
+              420
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 18
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": null
+              },
+              {
+                "localized_name": "video",
+                "name": "video",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": null
+              },
+              {
+                "localized_name": "audio",
+                "name": "audio",
+                "shape": 7,
+                "type": "AUDIO",
+                "link": null
+              },
+              {
+                "localized_name": "prompt",
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 19
+              },
+              {
+                "localized_name": "max_length",
+                "name": "max_length",
+                "type": "INT",
+                "widget": {
+                  "name": "max_length"
+                },
+                "link": 74
+              },
+              {
+                "localized_name": "thinking",
+                "name": "thinking",
+                "shape": 7,
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "thinking"
+                },
+                "link": 73
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "generated_text",
+                "name": "generated_text",
+                "type": "STRING",
+                "links": [
+                  33
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "TextGenerate",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              "",
+              512,
+              "on",
+              0.7,
+              64,
+              0.95,
+              0.05,
+              1.05,
+              0,
+              0,
+              true,
+              true
+            ],
+            "widgets_values_named": {
+              "prompt": "",
+              "max_length": 512,
+              "sampling_mode": "on",
+              "sampling_mode.temperature": 0.7,
+              "sampling_mode.top_k": 64,
+              "sampling_mode.top_p": 0.95,
+              "sampling_mode.min_p": 0.05,
+              "sampling_mode.repetition_penalty": 1.05,
+              "sampling_mode.seed": 0,
+              "sampling_mode.presence_penalty": 0,
+              "thinking": true,
+              "use_default_template": true
+            }
+          },
+          {
+            "id": 17,
+            "type": "StringConcatenate",
+            "pos": [
+              -210,
+              1310
+            ],
+            "size": [
+              230,
+              210
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "string_a",
+                "name": "string_a",
+                "type": "STRING",
+                "widget": {
+                  "name": "string_a"
+                },
+                "link": 21
+              },
+              {
+                "localized_name": "string_b",
+                "name": "string_b",
+                "type": "STRING",
+                "widget": {
+                  "name": "string_b"
+                },
+                "link": 97
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  19
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "StringConcatenate",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              "",
+              "",
+              ""
+            ],
+            "widgets_values_named": {
+              "string_a": "",
+              "string_b": "",
+              "delimiter": ""
+            }
+          },
+          {
+            "id": 18,
+            "type": "PrimitiveStringMultiline",
+            "pos": [
+              -430,
+              650
+            ],
+            "size": [
+              460,
+              610
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  21
+                ]
+              }
+            ],
+            "title": "Text String (System Prompt)",
+            "properties": {
+              "Node name for S&R": "PrimitiveStringMultiline",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              "You are an expert prompt engineer for text-to-image models. Your task is to expand the user's prompt into a highly effective image-generation prompt.\n\nThink step by step about the request before writing the answer:\n- What is the subject and mood?\n- What visual styles, mediums, and lighting options would fit? Consider two or three alternatives and pick the one that best serves the caption.\n- What composition, framing, and grounded details will help the text-to-image model?\n\nThen output a single expanded prompt paragraph.\n\nFollow these rules strictly:\n1. **Faithfulness First:** Preserve all original subjects, actions, colors, and spatial relationships. Do not add new objects, props, characters, or animals unless the user clearly implies them.\n2. **Practical T2I Structure:** Write a prompt that a text-to-image model can parse cleanly. Group subjects with their own attributes and actions. Use grounded phrasing for poses, interactions, and spatial layout.\n3. **Style Planning Stays Internal:** Use your internal reasoning to choose style, medium, framing, and lighting. Do not emit planning tags or wrappers in the visible answer body.\n4. **Text Rendering:** If the user requests visible text, quotes, labels, or typography, specify the exact text clearly and wrap requested words in quotes.\n5. **Avoid Over-Specification:** Do not invent highly specific clothing, colors, materials, or scene details unless the input supports them.\n6. **Structure:** Write one cohesive paragraph after the thinking block. No bullets, JSON, or markdown.\n7. **Respect Existing Detail:** If the user's prompt is already detailed, lightly polish and finalize rather than heavily expanding — preserve their phrasing and direction.\n8. **Respect the Human Form:** Treat depictions of people with dignity. Assume clothing covers genitals and intimate anatomy.\n9. **Preserve User Medium:** When the user explicitly requests a medium (e.g. \"photo of\", \"photograph of\", \"illustration of\", \"painting of\", \"sketch of\", \"3D render of\"), honor it. Do not pivot to a different medium to avoid difficulty — match the user's stated intent.\n\nUser's Input:\n\n"
+            ],
+            "widgets_values_named": {
+              "value": "You are an expert prompt engineer for text-to-image models. Your task is to expand the user's prompt into a highly effective image-generation prompt.\n\nThink step by step about the request before writing the answer:\n- What is the subject and mood?\n- What visual styles, mediums, and lighting options would fit? Consider two or three alternatives and pick the one that best serves the caption.\n- What composition, framing, and grounded details will help the text-to-image model?\n\nThen output a single expanded prompt paragraph.\n\nFollow these rules strictly:\n1. **Faithfulness First:** Preserve all original subjects, actions, colors, and spatial relationships. Do not add new objects, props, characters, or animals unless the user clearly implies them.\n2. **Practical T2I Structure:** Write a prompt that a text-to-image model can parse cleanly. Group subjects with their own attributes and actions. Use grounded phrasing for poses, interactions, and spatial layout.\n3. **Style Planning Stays Internal:** Use your internal reasoning to choose style, medium, framing, and lighting. Do not emit planning tags or wrappers in the visible answer body.\n4. **Text Rendering:** If the user requests visible text, quotes, labels, or typography, specify the exact text clearly and wrap requested words in quotes.\n5. **Avoid Over-Specification:** Do not invent highly specific clothing, colors, materials, or scene details unless the input supports them.\n6. **Structure:** Write one cohesive paragraph after the thinking block. No bullets, JSON, or markdown.\n7. **Respect Existing Detail:** If the user's prompt is already detailed, lightly polish and finalize rather than heavily expanding — preserve their phrasing and direction.\n8. **Respect the Human Form:** Treat depictions of people with dignity. Assume clothing covers genitals and intimate anatomy.\n9. **Preserve User Medium:** When the user explicitly requests a medium (e.g. \"photo of\", \"photograph of\", \"illustration of\", \"painting of\", \"sketch of\", \"3D render of\"), honor it. Do not pivot to a different medium to avoid difficulty — match the user's stated intent.\n\nUser's Input:\n\n"
+            }
+          },
+          {
+            "id": 19,
+            "type": "PrimitiveStringMultiline",
+            "pos": [
+              -1070,
+              -290
+            ],
+            "size": [
+              570,
+              800
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "value",
+                "name": "value",
+                "type": "STRING",
+                "widget": {
+                  "name": "value"
+                },
+                "link": 45
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  94
+                ]
+              }
+            ],
+            "title": "Text String (User Prompt)",
+            "properties": {
+              "Node name for S&R": "PrimitiveStringMultiline",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              "A high-resolution, surreal digital illustration showing a human hand holding a martini glass. The image is overlaid with whimsical, expressive ink-style doodles, including a cartoon figure inside the glass, a drawn citrus wedge on the rim, and various abstract sketches and faces surrounding the glass against a clean, white background. The style seamlessly blends a realistic, lit photograph with loose, hand-drawn marker artistry, creating a playful and artistic juxtaposition."
+            ],
+            "widgets_values_named": {
+              "value": "A high-resolution, surreal digital illustration showing a human hand holding a martini glass. The image is overlaid with whimsical, expressive ink-style doodles, including a cartoon figure inside the glass, a drawn citrus wedge on the rim, and various abstract sketches and faces surrounding the glass against a clean, white background. The style seamlessly blends a realistic, lit photograph with loose, hand-drawn marker artistry, creating a playful and artistic juxtaposition."
+            },
+            "color": "#322",
+            "bgcolor": "#533"
+          },
+          {
+            "id": 21,
+            "type": "ComfySwitchNode",
+            "pos": [
+              170,
+              1270
+            ],
+            "size": [
+              270,
+              130
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "on_false",
+                "name": "on_false",
+                "shape": 7,
+                "type": "STRING",
+                "link": 98
+              },
+              {
+                "localized_name": "on_true",
+                "name": "on_true",
+                "shape": 7,
+                "type": "STRING",
+                "link": 33
+              },
+              {
+                "localized_name": "switch",
+                "name": "switch",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "switch"
+                },
+                "link": 32
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "output",
+                "name": "output",
+                "type": "STRING",
+                "links": [
+                  91
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "ComfySwitchNode",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              false
+            ],
+            "widgets_values_named": {
+              "switch": false
+            }
+          },
+          {
+            "id": 24,
+            "type": "PrimitiveBoolean",
+            "pos": [
+              -910,
+              840
+            ],
+            "size": [
+              270,
+              110
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "value",
+                "name": "value",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "value"
+                },
+                "link": 46
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "BOOLEAN",
+                "name": "BOOLEAN",
+                "type": "BOOLEAN",
+                "links": [
+                  32
+                ]
+              }
+            ],
+            "title": "Boolean (Refine Prompt?)",
+            "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0"
+            },
+            "widgets_values": [
+              true
+            ],
+            "widgets_values_named": {
+              "value": true
+            }
+          },
+          {
+            "id": 52,
+            "type": "CallsheetLoRATagLoader",
+            "pos": [
+              -60,
+              -520
+            ],
+            "size": [
+              230,
+              100
+            ],
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 92
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 93
+              },
+              {
+                "localized_name": "prompt",
+                "name": "prompt",
+                "type": "STRING",
+                "link": 94
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "links": [
+                  95
+                ]
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "links": [
+                  96
+                ]
+              },
+              {
+                "localized_name": "prompt",
+                "name": "prompt",
+                "type": "STRING",
+                "links": [
+                  97,
+                  98
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "CallsheetLoRATagLoader"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 1,
+            "title": "Models",
+            "bounding": [
+              -430,
+              -320,
+              490,
+              850
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 4,
+            "title": "Prompt Enhancement",
+            "bounding": [
+              -440,
+              580,
+              1940,
+              840
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 5,
+            "title": "Group",
+            "bounding": [
+              -1080,
+              -360,
+              610,
+              910
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 6,
+            "title": "Image Generation",
+            "bounding": [
+              -440,
+              -360,
+              1940,
+              910
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 7,
+            "title": "Prompt",
+            "bounding": [
+              90,
+              -320,
+              500,
+              570
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 8,
+            "title": "Size",
+            "bounding": [
+              90,
+              270,
+              500,
+              260
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 9,
+            "title": "Feature Switch",
+            "bounding": [
+              -1080,
+              580,
+              610,
+              400
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          }
+        ],
+        "links": [
+          {
+            "id": 4,
+            "origin_id": 6,
+            "origin_slot": 0,
+            "target_id": 3,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 14,
+            "origin_id": 13,
+            "origin_slot": 0,
+            "target_id": 3,
+            "target_slot": 2,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 2,
+            "origin_id": 5,
+            "origin_slot": 0,
+            "target_id": 3,
+            "target_slot": 3,
+            "type": "LATENT"
+          },
+          {
+            "id": 7,
+            "origin_id": 3,
+            "origin_slot": 0,
+            "target_id": 8,
+            "target_slot": 0,
+            "type": "LATENT"
+          },
+          {
+            "id": 12,
+            "origin_id": 12,
+            "origin_slot": 0,
+            "target_id": 8,
+            "target_slot": 1,
+            "type": "VAE"
+          },
+          {
+            "id": 13,
+            "origin_id": 6,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 18,
+            "origin_id": 11,
+            "origin_slot": 0,
+            "target_id": 16,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 19,
+            "origin_id": 17,
+            "origin_slot": 0,
+            "target_id": 16,
+            "target_slot": 4,
+            "type": "STRING"
+          },
+          {
+            "id": 21,
+            "origin_id": 18,
+            "origin_slot": 0,
+            "target_id": 17,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 33,
+            "origin_id": 16,
+            "origin_slot": 0,
+            "target_id": 21,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 32,
+            "origin_id": 24,
+            "origin_slot": 0,
+            "target_id": 21,
+            "target_slot": 2,
+            "type": "BOOLEAN"
+          },
+          {
+            "id": 43,
+            "origin_id": 8,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 45,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 19,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 46,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 24,
+            "target_slot": 0,
+            "type": "BOOLEAN"
+          },
+          {
+            "id": 73,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 16,
+            "target_slot": 6,
+            "type": "BOOLEAN"
+          },
+          {
+            "id": 74,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 16,
+            "target_slot": 5,
+            "type": "INT"
+          },
+          {
+            "id": 75,
+            "origin_id": -10,
+            "origin_slot": 4,
+            "target_id": 5,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 76,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 5,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 77,
+            "origin_id": -10,
+            "origin_slot": 6,
+            "target_id": 3,
+            "target_slot": 4,
+            "type": "INT"
+          },
+          {
+            "id": 82,
+            "origin_id": -10,
+            "origin_slot": 7,
+            "target_id": 10,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 83,
+            "origin_id": -10,
+            "origin_slot": 8,
+            "target_id": 11,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 84,
+            "origin_id": -10,
+            "origin_slot": 9,
+            "target_id": 12,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 91,
+            "origin_id": 21,
+            "origin_slot": 0,
+            "target_id": 6,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 92,
+            "origin_id": 10,
+            "origin_slot": 0,
+            "target_id": 52,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 93,
+            "origin_id": 11,
+            "origin_slot": 0,
+            "target_id": 52,
+            "target_slot": 1,
+            "type": "CLIP"
+          },
+          {
+            "id": 94,
+            "origin_id": 19,
+            "origin_slot": 0,
+            "target_id": 52,
+            "target_slot": 2,
+            "type": "STRING"
+          },
+          {
+            "id": 95,
+            "origin_id": 52,
+            "origin_slot": 0,
+            "target_id": 3,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 96,
+            "origin_id": 52,
+            "origin_slot": 1,
+            "target_id": 6,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 97,
+            "origin_id": 52,
+            "origin_slot": 2,
+            "target_id": 17,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 98,
+            "origin_id": 52,
+            "origin_slot": 2,
+            "target_id": 21,
+            "target_slot": 0,
+            "type": "STRING"
+          }
+        ],
+        "extra": {}
+      }
+    ]
+  },
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.52.7",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "ds": {
+      "scale": 0.7513148009015777,
+      "offset": [
+        1126.8892458103887,
+        663.907483492236
+      ]
+    }
+  },
+  "version": 0.4
+}
