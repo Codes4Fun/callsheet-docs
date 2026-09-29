@@ -17,7 +17,8 @@
             --bg-color: #ffffff;
             --sidebar-bg: #f8fafc;
             --border-color: #e2e8f0;
-            --code-bg: #f1f5f9;
+            --code-bg: #e9e9e9;
+            --code-color: #171718;
             --hover-bg: #f1f5f9;
         }
 
@@ -31,6 +32,7 @@
                 --sidebar-bg: #262729;
                 --border-color: #334155;
                 --code-bg: #1e1f20;
+                --code-color: #fff;
                 --hover-bg: #334155;
             }
         }
@@ -239,7 +241,7 @@
             position: relative;
             white-space: pre-wrap;
             max-height: 80vh;
-            color: #fff;
+            color: var(--code-color);
         }
 
         code {
