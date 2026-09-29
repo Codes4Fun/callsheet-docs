@@ -393,7 +393,7 @@
             .toc-container {
                 position: fixed;
                 top: 20px;
-                left: 1180px;
+                right: 0px;
                 width: 280px;
                 overflow-y: auto;
                 background: transparent;
@@ -563,7 +563,6 @@
 
             // Update URL hash
             window.location.hash = headingId? page + '#' + headingId : page;
-            console.log(window.location.hash)
 
             // Show loading state
             const content = document.getElementById('content');
@@ -680,7 +679,7 @@
             const tocLinks = document.querySelectorAll('.toc-link');
             tocLinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.href.includes(`#${activeId}`)) {
+                if (link.href.endsWith(`#${activeId}`)) {
                     link.classList.add('active');
                 }
             });
