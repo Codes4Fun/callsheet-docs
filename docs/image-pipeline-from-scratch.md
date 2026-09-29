@@ -1,5 +1,5 @@
 # Image Pipeline From Scratch
-This guide shows you how to create a simple callsheet pipeline from a standard ComfyUI template to generate character references from `1prompt`, it assumes some basic familiarity with ComyUI.
+This guide shows you how to create a simple callsheet pipeline from a standard ComfyUI template to generate character references from `1prompt`, it assumes some basic familiarity with ComfyUI.
 
 A callsheet prompt specifies the creation and editing of multiple reference assets and videos.
 
