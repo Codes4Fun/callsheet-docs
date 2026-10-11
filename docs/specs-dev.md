@@ -49,6 +49,14 @@ The root is an object/dict with the name of the pipeline (`krea2` and `minimax_h
 
 `length` allows for specify default `step` and `offset` for the number of frames/samples required by the pipeline.
 
+## input_spec
+
+It's a tuple with type, label, key, and data.
+ * type is "image", "audio", or "video"
+ * label is an override used for 'source' property, otherwise uses type + index, `image_0` etc.
+ * key is used for hashing so dependent tasks can rerun if changed.
+ * data is the loaded media.
+
 ## item_spec
 
 used in parsed_spec
